@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="cat" href="kitten.jpeg">
+    <link href="style.css" rel="stylesheet" />
     <title>CDC Meeting Minute</title>
   </head>
   <body>
     <main>
       <header>
-        <div class="CDC div">
         <h1 id="CDCMeetingMinute" >&emsp; Meeting minute for CDC</h1>
+        <div class="CDC">
         <button type="button" onclick="alert('Meeting minute for CDC')">Click me</button>
         <hr>
         <h2 id="CheckinSection">&emsp; Check-ins</h2>
@@ -25,31 +25,39 @@
         </ul>
       </details>
     </main>
-    <header>
-      <h2>&emsp; Today's Date</h2>
-    </header>
-    <p id="Date"> &emsp; &emsp; Oct 9 2022</p>
+    <div class="date_wrapper">
+      <header>
+        <div class="box px"><h2>&emsp; Today's Date</h2></div>
+      </header>
+      <div class="box vw"><p id="Date"> &emsp; &emsp; Oct 9 2022</p></div>
+    </div>
     <section>
       <h2>&emsp; Attendance list</h2>
-      <span>&emsp; &emsp;Club members</span>
-      <table>
-          <tr>
-              <th>&emsp; Jonhson (President)</th>
-              <th>&emsp; Taylor (Vice President)</th>
-              <th>&emsp; Kimothy (Secretary)</th>
-              <th>&emsp; Raymond (Treasure)</th>
-          </tr>
-      </table>
-      <p>&emsp; &emsp;Special guest</p>
-      <ul>
-        <li>Professor Delia</li>
-      </ul>
+      <div class="container"></div>
+        <div class="box"><span>&emsp; &emsp;Club members</span></div>
+      </div>
+        <table>
+            <tr>
+                <th>&emsp; Jonhson (President)</th>
+                <th>&emsp; Taylor (Vice President)</th>
+                <th>&emsp; Kimothy (Secretary)</th>
+                <th>&emsp; Raymond (Treasure)</th>
+            </tr>
+        </table>
+      <div class="guest_wrapper">
+        <div class="box cm"><p>&emsp; &emsp;Special guest</p></div>
+        <ul>
+          <div class="box mm"><li>Professor Delia</li></div>
+        </ul>
+      </div>
     </section>
     <header>
-      <h3>&emsp; Today's Todo List</h3>
+      <div class="container">
+        <div class="box_date"><h3>&emsp; Today's Todo List</h3></div>
+      </div>
     </header>
     <section>
-      <strong>&emsp; &emsp;Agenda</strong>
+      <div class="box_agenda"><strong>&emsp; &emsp;Agenda</strong></div>
       <ol>
           <li>Introduce new club members</li>
           <li>Introduce what CDC works for</li>
@@ -58,7 +66,7 @@
           <li>Discuss new topics for today</li>
           <li>Meeting end</li>
       </ol>
-      <p>&emsp; &emsp;Last meeting's leftover</p>
+      <div class="box_meeting"><p>&emsp; &emsp;Last meeting's leftover</p></div>
       <ol>
           <li>Design the slogan for CDC</li>
           <li>Club's day preparation</li>
@@ -70,8 +78,8 @@
           <li>Confirm Sponsor list</li>
       </ol>
     </section>
-    <em>&emsp; Questions</em><br>
-    <b>&emsp; Any questions wants to bring out?</b>
+    <div class="box_question"><em>&emsp; Questions</em><br></div>
+    <div class="box_mq"><b>&emsp; Any questions wants to bring out?</b></div>
     <form>
       <fieldset>
         <label for="fname">Question:</label><br>
@@ -98,7 +106,7 @@
       </fieldset>
     </form>
     <img src="https://www.nordantech.com/media/pages/blog/community/8-tipps-fuer-ein-erfolgreiches-meeting/00022d9063-1643812301/meeting-tipps-erfolgreich-1200x630.jpg" alt="meeting image">
-    <p>Some cute musics</p>
+    <div class="music"><p>Some cute musics</p></div>
     <audio controls autoplay>
       <source src="audio.mp3" type="audio/mpeg">
     </audio>
